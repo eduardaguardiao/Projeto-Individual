@@ -55,7 +55,7 @@ body {
     transform: translate(-50%, -50%); 
     padding: 20px; 
     color: #000000;
-    font-weight: 800;
+    font-weight: 600;
     background: rgba(0, 0, 0, 0.7); 
     /* background-color: #232c34; */
     /* background-color: rgba(255, 255, 255, 0.5); */
@@ -73,7 +73,7 @@ span {
     justify-content: center;
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: small;
     margin-top: 10px;  /* espaçamento entre span e input*/
    
 }
@@ -109,6 +109,7 @@ input {
     cursor: pointer;
     justify-content: center;
     font-weight: 700;
+ 
    
 }
 
