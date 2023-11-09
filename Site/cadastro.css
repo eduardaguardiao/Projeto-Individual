@@ -48,7 +48,6 @@ body {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,14 +59,15 @@ body {
     /* background-color: #232c34; */
     /* background-color: rgba(255, 255, 255, 0.5); */
     border-radius: 20px; 
-    
+    height: 60%;
     width: 250px;
-   
-    
+    /* align-content: center;     */
+    align-self: center;
+
 }
 
 
-span {
+.campos {
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -75,8 +75,9 @@ span {
     font-family: 'Times New Roman', Times, serif;
     font-size: small;
     margin-top: 10px;  /* espaçamento entre span e input*/
-   
+    flex-direction: column;
 }
+
 input {
     border-radius: 8px;
     height: 18px;
@@ -89,26 +90,16 @@ input {
 }
 
 
-/* button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    margin-top: 10px;
-    height: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    font-weight: 800;
-    cursor: pointer;
-} */
-
  button {
     height: 30px;
     /* width: 5vw; */
-    border-radius: 8px;
+    border-radius: 30px;
     cursor: pointer;
     justify-content: center;
     font-weight: 700;
+    /* position:fixed;  */
+    align-self: center;
+    width: 150px;
  
    
 }
