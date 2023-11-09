@@ -22,7 +22,7 @@ body {
 
 /* LOGO */
 .header img {
-    height: 145px;
+    height: 160px;
     margin-top: 3%;
    
     
@@ -56,7 +56,7 @@ body {
     padding: 20px; 
     color: #000000;
     font-weight: 600;
-    background: rgba(0, 0, 0, 0.7); 
+    background: rgba(0, 0, 0, .7); 
     /* background-color: #232c34; */
     /* background-color: rgba(255, 255, 255, 0.5); */
     border-radius: 20px; 
