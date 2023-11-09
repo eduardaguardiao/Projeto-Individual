@@ -17,13 +17,13 @@ body {
     top: 0;
     width: 100%;
     height: 80px;
-
-}
-
-.header  {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.header  {
 
     /* width: 80%; */
     /* margin: auto; */
@@ -72,22 +72,29 @@ li:hover {
 }
 
 .banner .text {
-    position: sticky;
-    position: relative;
+    
+    /* position: relative; */
+    position: absolute;
     justify-content: center;
     width: 100%;
-    z-index: 5;
+    /* z-index: 5; */
     bottom: 380px; 
     display: flex;
     
 }
 
 .banner .text h1 {
+    
     color: beige;
     font-family: 'Times New Roman', Times, serif;
     background: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     
+}
+
+.text h1 {
+    position: absolute;
+    top: 50%;
 }
 
 
