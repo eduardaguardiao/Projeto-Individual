@@ -91,12 +91,12 @@ span {
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
-    margin-top: 10px;
+    margin-top: 10px;  /* espaçamento entre span e input*/
    
 }
 input {
     border-radius: 8px;
-    height: 15px;
+    height: 18px;
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ input {
 }
 
 
-button {
+/* button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,17 +117,26 @@ button {
     font-size: larger;
     font-weight: 800;
     cursor: pointer;
-}
+} */
 
- /* button {
-    height: 3.5vw;
-    width: 15vw;
-    border-radius: 1vw;
-    border: none;
+ button {
+    height: 30px;
+    /* width: 5vw; */
+    border-radius: 8px;
     cursor: pointer;
     justify-content: center;
-    padding: 2%;
-} */
+    font-weight: 700;
+   
+}
+
+button:hover {
+    background-color: #b23a48;
+    color: antiquewhite;
+}
+
+
+
+
 
 
 
