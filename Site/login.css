@@ -5,7 +5,8 @@ body {
     overflow-y: hidden;
 
 }
-.header {
+/* versão com a logo no começo */
+/* .header {
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -16,7 +17,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #000000; */
+    
+} */
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
 }
 
 
@@ -93,19 +107,21 @@ input {
 
 
  button {
-    height: 40px;
-    width: 150px;
+    height: 30px;
+    width: 140px;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 700;
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     align-self: center;
-    border-color: aliceblue;
+    color: beige;
+    background-color: #b23a48;
+    border: none;
+    transition: all 0.3s;
    
 }
 
 button:hover {
-    background-color: #b23a48;
-    color: antiquewhite;
+    transform: scale(1.1);
 }
