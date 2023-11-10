@@ -58,11 +58,12 @@ body {
     background: rgba(0, 0, 0, .7); 
     /* background-color: #232c34; */
     /* background-color: rgba(255, 255, 255, 0.5); */
-    border-radius: 20px; 
-    height: 60%;
-    width: 250px;
+    border-radius: 30px; 
+    height: 580px;
+    width: 350px;
     /* align-content: center;     */
     align-self: center;
+   
 
 }
 
@@ -70,18 +71,19 @@ body {
 .campos {
     display: flex; 
     align-items: center;
-    justify-content: center;
-    color: aliceblue;
+    color: beige;
     font-family: 'Times New Roman', Times, serif;
-    font-size: small;
-    margin-top: 10px;  /* espaçamento entre span e input*/
+    font-size: large;
+    /* margin-top: 15px;   */
     flex-direction: column;
+   
 }
 
 input {
-    border-radius: 8px;
-    height: 18px;
+    border-radius: 25px;
+    height: 23px;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 .cadastro .container h2 { 
@@ -91,16 +93,15 @@ input {
 
 
  button {
-    height: 30px;
-    /* width: 5vw; */
-    border-radius: 30px;
-    cursor: pointer;
-    justify-content: center;
-    font-weight: 700;
-    /* position:fixed;  */
-    align-self: center;
+    height: 40px;
     width: 150px;
- 
+    border-radius: 30px;
+    align-self: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: aliceblue;
    
 }
 
