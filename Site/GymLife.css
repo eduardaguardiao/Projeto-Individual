@@ -10,7 +10,7 @@ body {
 
 /* HEADER */
 .header {
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -27,6 +27,7 @@ body {
 /* LOGO */
 .header img {
     height: 145px;
+    
 }
 
 /* MENU */
@@ -50,7 +51,8 @@ a {
 li:hover {
     color: #b23a48;
     cursor: pointer;
-    
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 
 
@@ -62,7 +64,7 @@ li:hover {
     object-fit: cover;
     opacity: .8;
     margin-top: 80px;
-    position: fixed;
+    position: relative;
     
 }
 
@@ -92,6 +94,10 @@ li:hover {
     top: 50%;
 }
 
+p {
+    color: aliceblue;
+    text-align: center;
+}
 
 
 
