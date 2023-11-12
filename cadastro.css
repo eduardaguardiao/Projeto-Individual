@@ -116,7 +116,24 @@ button:hover {
     transform: scale(1.1);
 }
 
+.possuiLogin {
+    margin-top: 3%;
+}
+.possuiLogin a {
+    text-decoration: none;
+    cursor: pointer;
+    color: beige;
+    font-size: small;
+}
 
+.possuiLogin a:hover {
+    color: #b23a48;
+}
+
+.possuiLogin p {
+    color: beige;
+    font-size: small;
+}
 
 
 

@@ -106,3 +106,21 @@ button:hover {
     transform: scale(1.1);
 }
 
+.possuiConta {
+    margin-top: 3%;
+}
+.possuiConta a {
+    text-decoration: none;
+    cursor: pointer;
+    color: beige;
+    font-size: small;
+}
+
+.possuiConta a:hover {
+    color: #b23a48;
+}
+
+.possuiConta p {
+    color: beige;
+    font-size: small;
+}

@@ -23,13 +23,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position: fixed; */
     
 }
 
 /* LOGO */
 .header img {
     height: 145px;
-    
+    display: block;
 }
 
 /* MENU */
@@ -105,11 +106,29 @@ p {
     font-family: 'Times New Roman', Times, serif        ;
 }
 
+.bemEstar h1 {
+
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    top: 50%;
+    justify-content: center;
+    width: 100%;
+    bottom: 150px; 
+    display: flex;  
+    font-size: xx-large;
+}
+
 .bemEstar p {
     font-size: x-large;
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
+    color: beige; 
     color: beige;
+    font-family: 'Times New Roman', Times, serif;
+   
+    padding: 10px;
 }
 
 .bemEstar .container {
@@ -117,7 +136,7 @@ p {
     flex-direction: row;
     overflow-y: hidden;
     justify-content: space-between;
-    margin-top: 3%
+    margin-top: 5%
 }
 
 .container .cards {
@@ -152,6 +171,7 @@ p {
     position: relative;
     cursor: pointer;
    
+   
 }
 
 .conteudo {
@@ -185,3 +205,43 @@ p {
 }
 /* FIM SEÇÃO BEM ESTAR */
 
+
+/* DICAS */
+
+.dicas {
+    overflow-y: hidden;
+}
+
+.dicas img {
+    
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: .6;
+    margin-top: 10px;
+    
+    
+}
+
+.dicas .text {
+    
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    bottom: 150px; 
+    display: flex;  
+}
+
+.dicas .text h1 {
+    
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    
+}
+
+.text h1 {
+    position: absolute;
+    top: 50%;
+}
