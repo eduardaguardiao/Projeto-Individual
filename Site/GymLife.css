@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap'); */
+
 html {
     scroll-behavior: smooth;
   }
@@ -5,16 +7,12 @@ html {
 
 body {
     margin: 0;
-    background-color: #000000;
-
-   
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
-
+    background-color: #080808;
 }
 
 /* HEADER */
 .header {
+    background-color: #000000;
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -35,6 +33,7 @@ body {
 }
 
 /* MENU */
+
 .container ul {
     width: 600px;
     list-style: none;
@@ -42,8 +41,8 @@ body {
     justify-content: space-evenly;
     color: #d4c8c8;
     font-size: medium;
-
 }
+
 
 a {
     color: #d4c8c8;
@@ -54,8 +53,8 @@ a {
 li:hover {
     color: #b23a48;
     cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s;
+    /* transform: scale(1.1);
+    transition: all 0.3s; */
 }
 
 /* BANNER */
@@ -77,6 +76,7 @@ li:hover {
     /* z-index: 5; */
     bottom: 380px; 
     display: flex;
+    
 }
 
 .banner .text h1 {
@@ -105,33 +105,83 @@ p {
     font-family: 'Times New Roman', Times, serif        ;
 }
 
-.bemEstar .cards p {
+.bemEstar p {
     font-size: x-large;
+    font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
+    color: beige;
 }
 
-/* .bemEstar .cards {
+.bemEstar .container {
     display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    justify-content: space-between;
+    margin-top: 3%
+}
+
+.container .cards {
     border: solid;
     border-radius: 10px;
     background-color: #b23a48;
+    border: none; 
     flex-direction: column-reverse;
-    width: 50%;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
 
+.container .cards p {
+    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .cards:hover {
-    transition: all 0.3s;
+    transition: all 0.5s;
     transform: scale(1.1);
+    cursor: pointer;
+} 
+
+
+/* CONTEUDO QUE APARECE QUANDO CLICA NOS CARDS */
+.cards {
+    position: relative;
+    cursor: pointer;
    
-} */
+}
 
+.conteudo {
+    display: none;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 10%;
+    background-color: #8c2733;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
 
+.cards:hover .conteudo {
+    display: block;
+    overflow-y: hidden;
+}
 
-
-
-
-
+.conteudo p {
+    margin: 0;
+    color: beige;
+    font-size: small;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+/* FIM SEÇÃO BEM ESTAR */
 
