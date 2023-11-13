@@ -5,6 +5,7 @@ body {
     overflow-y: hidden;
 
 }
+
 .header {
     position: fixed;
     display: flex;
@@ -51,14 +52,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    padding: 20px; 
+    padding: 25px; 
     color: #000000;
     font-weight: 600;
     background: rgba(0, 0, 0, .7); 
     /* background-color: #232c34; */
     /* background-color: rgba(255, 255, 255, 0.5); */
     border-radius: 30px; 
-    height: 590px;
+    height: 500px;
     width: 350px;
     /* align-content: center;     */
     align-self: center;
@@ -86,7 +87,9 @@ input {
     text-align: center;
     margin-bottom: 10%;
     border: none;
+   
 }
+
 
 .cadastro .container h2 { 
     text-align: center;
@@ -132,10 +135,13 @@ button:hover {
 
 .possuiLogin p {
     color: beige;
-    font-size: small;
+    font-size: medium;
 }
 
-
+.possuiLogin a {
+    color: beige;
+    font-size: medium;
+}
 
 
 

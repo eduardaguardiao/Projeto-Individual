@@ -122,5 +122,10 @@ button:hover {
 
 .possuiConta p {
     color: beige;
-    font-size: small;
+    font-size: medium;
+}
+
+.possuiConta a {
+    color: beige;
+    font-size: medium;
 }
