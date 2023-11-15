@@ -274,7 +274,7 @@ p {
     
 }
 
-.topicos {
+.topicosDireita {
    
     display: flex;
     margin: 0;
@@ -283,7 +283,7 @@ p {
 }
 
 
-.topicos h1 {
+.topicosDireita h1 {
     color: #b23a48;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -291,12 +291,13 @@ p {
 
 
 /* IMAGENS E TEXTOS  */
+/* imagem à direita */
 .textos {
     display: flex;
     align-items: center;
 }
 
-.topicos span {
+.topicosDireita span {
 
     /* font-size: 1.875rem;
     line-height: 2.375rem; */
@@ -306,6 +307,7 @@ p {
     font-style: normal;
     color: beige;
     margin-right: 20px;
+    text-align: justify;
    
 }
 
@@ -315,6 +317,7 @@ p {
     width: 400px; 
     height: 340px;
     border-radius: 20px;
+    margin-bottom: 10%;
 }
 
 
@@ -343,22 +346,66 @@ p {
     font-style: normal;
     color: beige;
     margin-left: 20px;
+    text-align: justify;
    
 }
 
 .imgEsquerda img {
     
-    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 20px; 
     width: 400px; 
     height: 340px;
     border-radius: 20px;
 }
 
-/* .imgEsquerda img:hover {
-   
-        transition: all 0.5s;
-        transform: scale(1.1);
-        cursor: pointer;
+/* FIM SEÇÃO DICAS */
+
+
+
+  /* FOOTER */
+
+
+  .footer{
+    display: flex;
+    background-color: #1e1e1e   ;
+    color: beige;
+    justify-content: center;
+    position: relative;
+    min-height: 27vh;
+  }
+
+  .footer .redesSociais h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  a {
+    color:  beige;
+    /* line-height: 1%; */
     
-} */
+  }
+
+  .footer .redesSociais {
+    margin-right: 15px;
+   
+  }
+
+
+  ul {
+    list-style: none;
+    
+  }
+
+  .footer .redesSociais li {
+    margin-bottom: 5px;
+    
+  }
+
+
+  .footer p {
+    position: absolute; 
+    bottom: 10px; 
+    text-align: center; 
+    
+}
