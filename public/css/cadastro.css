@@ -143,6 +143,15 @@ button:hover {
     font-size: medium;
 }
 
-
+/* CIRCLE LOADING */
+.loading-div {
+    width: 50px;
+    display: none;
+  }
+  
+  .loading-div img {
+    height: 50px;
+    width: 50px;
+  }
 
 
