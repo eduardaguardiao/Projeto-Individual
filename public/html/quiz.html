@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- quiz -->
     <div class="header">
         <img src="../imagens/logoSemfundo.png">
         <div class="sair">
@@ -40,7 +41,39 @@
         </div>
     </div>
 
-    
+    <!-- calculadora IMC -->
+    <div class="calculadora">
+        <h2>Calculadora de IMC</h2>
+        <div class="container">
+            <p>Peso: <br>
+                <input id="peso_input" placeholder="exemplo: 60"> 
+            </p>
+            <br>
+            <p>
+                Altura: <br>
+                <input id="altura_input" placeholder="exemplo: 1.60"> 
+            </p>
+            <br>
+            <button  class="botaoIMC" onclick="calcular()">Calcular</button>
+        </div>
+    </div>
 
 </body>
 </html>
+<!-- <script>
+    var perguntas = [
+        {
+            questoes: "Qual é o músculo mais forte do corpo humano?",
+            respostas: [
+                {texto: 'tríceps', correta: false},
+                {texto: 'quadríceps', correta: true},
+                {texto: 'dorsal', correta: false},
+                {texto: 'trapézio', correta: false},
+            ]
+        },
+
+        {
+            
+        }
+    ]
+</script> -->

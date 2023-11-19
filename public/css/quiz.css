@@ -50,7 +50,7 @@
 }
 
 /* quiz */
-.quiz {
+/* .quiz {
     background: #000;
     width: 90%;
     max-width: 600px;
@@ -67,13 +67,13 @@
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
     text-align: center;
-}
+} */
 
 /* .quiz {
     padding: 20px ;
 } */
 
-.quiz h2{
+/* .quiz h2{
     font-size: 18px;
     color: beige;
     font-weight: 600;
@@ -111,8 +111,142 @@
     border-radius: 8px;
     cursor: pointer;
     text-align: center ;
+    transition: all 0.3s;
+} */
     /* display: none; */
+    
+
+/* #prox-btn:hover {
+    transform: scale(1.1);
+} */
+
+.quiz {
+    background: #000;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.quiz h1 {
+    font-weight: 600;
+    color: #b23a48;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: beige;
+    font-weight: 600;
+    text-align: left;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+#prox-btn {
+    background: #b23a48;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 20px auto 0; 
+    /* display: block;  */
+    /* display: none; */
+    margin: 20px auto;
+    text-align: center;
+}
+
+#prox-btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* CALCULADORA IMC */
+
+.calculadora {
+    background: #000;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+
+.calculadora h2 {
+    font-weight: 25px;
+    color: #b23a48;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
     
 }
 
+.calculadora p {
+    color: beige;
+    font-weight: 600;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+.botaoIMC {
+    background: #b23a48;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0 ;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    transition: all 0.3s;
+}
+
+
+.botaoIMC:hover {
+    transform: scale(1.1);
+}
+
+input {
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+    border: none;
+    
+}
 
