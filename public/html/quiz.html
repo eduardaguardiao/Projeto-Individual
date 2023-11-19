@@ -26,19 +26,18 @@
     <div class="quiz">
         <h1>AGORA É COM VOCÊ!</h1>
         <div class="container">
-            <h2 id="questoes">PERGUNTAS</h2>
-            <div id="respostas">
-              
-                <button class="btn">1</button>
-                <button class="btn">2</button>
-                <button class="btn">3</button>
-                <button class="btn">4</button>
-
+            <h2 id="question">PERGUNTAS</h2>
+            <div id="answer-buttons">
+                <button class="btn">a</button>
+                <button class="btn">b</button>
+                <button class="btn">c</button>
+                <button class="btn">d</button>
             </div>
             <div>
-                <button class="btn" id="prox-btn">PRÓXIMA</button class="btn">
+                <button class="btn" id="next-btn">PRÓXIMA</button class="btn">
             </div>
         </div>
+        <script src="../js/quiz.js"></script>
     </div>
 
     <!-- calculadora IMC -->
@@ -53,7 +52,7 @@
                 Altura: <br>
                 <input id="altura_input" placeholder="exemplo: 1.60"> 
             </p>
-            <br>
+            
             <button  class="botaoIMC" onclick="calcular()">Calcular</button><br>
             <div id="verIMC"></div>
         </div>
@@ -73,19 +72,19 @@
             alert(`Prencha todos os campos`)
         }
         else if(imc < 18.5 ){
-            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Abaixo do peso</p>`
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Seu IMC: ${imc.toFixed(2)} <br> Abaixo do peso</p>`
         }
         else if(imc <= 24.9){
-            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Peso normal</p>`
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Seu IMC: ${imc.toFixed(2)} <br> Peso normal</p>`
         }
         else if(imc <= 29.9){
-            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Sobrepeso</p>`
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Seu IMC: ${imc.toFixed(2)} <br> Sobrepeso</p>`
         }
         else if(imc <= 34.9){
-            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Obesidade grau 1</p>`
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Seu IMC: ${imc.toFixed(2)} <br> Obesidade grau 1</p>`
         }
         else {
-            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Obesidade mórbida</p>`
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Seu IMC: ${imc.toFixed(2)} Obesidade mórbida</p>`
         }
         
     }

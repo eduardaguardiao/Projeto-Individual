@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  } 
+
+  html::-webkit-scrollbar {
+    width: 3px;
+    height: 3px; 
+  }
+
+  html::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: #b23a48;
+  }
+
+
 .body{
     overflow-y: hidden;
 }
@@ -49,76 +68,7 @@
     z-index: -1; 
 }
 
-/* quiz */
-/* .quiz {
-    background: #000;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: 12%;
-}
-
-.quiz h1 {
-    font-weight: 25px;
-    color: #b23a48;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
-    padding-bottom: 30px;
-    text-align: center;
-} */
-
-/* .quiz {
-    padding: 20px ;
-} */
-
-/* .quiz h2{
-    font-size: 18px;
-    color: beige;
-    font-weight: 600;
-    
-}
-
-.btn {
-    background: #fff;
-    color: #222;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.btn:hover {
-    background: #222;
-    color: #fff;
-
-}
-
-#prox-btn {
-    background: #b23a48;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0 ;
-    border-radius: 8px;
-    cursor: pointer;
-    text-align: center ;
-    transition: all 0.3s;
-} */
-    /* display: none; */
-    
-
-/* #prox-btn:hover {
-    transform: scale(1.1);
-} */
+/* QUIZ */
 
 .quiz {
     background: #000;
@@ -143,6 +93,7 @@
     color: beige;
     font-weight: 600;
     text-align: left;
+    
 }
 
 .btn {
@@ -157,14 +108,21 @@
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: 600;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
 }
 
-#prox-btn {
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
     background: #b23a48;
     color: #fff;
     font-weight: 500;
@@ -175,14 +133,22 @@
     cursor: pointer;
     transition: all 0.3s;
     margin: 20px auto 0; 
-    /* display: block;  */
-    /* display: none; */
     margin: 20px auto;
     text-align: center;
+    display: none;
 }
 
-#prox-btn:hover {
+#next-btn:hover {
     transform: scale(1.1);
+}
+
+/* css das variaveis definidas no js */
+.correto{
+    background: #9aeabc;
+
+}
+.incorreto {
+    background: #ff9393;
 }
 
 
@@ -229,7 +195,7 @@
     width: 150px;
     border: 0;
     padding: 10px;
-    margin: 20px auto 0 ;
+    margin: 15px;
     border-radius: 8px;
     cursor: pointer;
     text-align: center ;
