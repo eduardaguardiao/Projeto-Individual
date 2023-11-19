@@ -215,9 +215,11 @@
 .calculadora p {
     color: beige;
     font-weight: 600;
+    font-size: larger;
     justify-content: center;
     margin: 0;
     text-align: center;
+    
 }
 
 .botaoIMC {

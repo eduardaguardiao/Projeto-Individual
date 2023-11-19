@@ -43,7 +43,7 @@
 
     <!-- calculadora IMC -->
     <div class="calculadora">
-        <h2>Calculadora de IMC</h2>
+        <h2>Calculadora de IMC  </h2>
         <div class="container">
             <p>Peso: <br>
                 <input id="peso_input" placeholder="exemplo: 60"> 
@@ -54,26 +54,40 @@
                 <input id="altura_input" placeholder="exemplo: 1.60"> 
             </p>
             <br>
-            <button  class="botaoIMC" onclick="calcular()">Calcular</button>
+            <button  class="botaoIMC" onclick="calcular()">Calcular</button><br>
+            <div id="verIMC"></div>
         </div>
     </div>
 
+
 </body>
 </html>
-<!-- <script>
-    var perguntas = [
-        {
-            questoes: "Qual é o músculo mais forte do corpo humano?",
-            respostas: [
-                {texto: 'tríceps', correta: false},
-                {texto: 'quadríceps', correta: true},
-                {texto: 'dorsal', correta: false},
-                {texto: 'trapézio', correta: false},
-            ]
-        },
+<script>
 
-        {
-            
+    function calcular(){
+        var peso = Number(peso_input.value)
+        var altura = Number(altura_input.value)
+        var imc = peso/(altura*altura)
+
+        if(peso == '' || altura == ''){
+            alert(`Prencha todos os campos`)
         }
-    ]
-</script> -->
+        else if(imc < 18.5 ){
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Abaixo do peso</p>`
+        }
+        else if(imc <= 24.9){
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Peso normal</p>`
+        }
+        else if(imc <= 29.9){
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Sobrepeso</p>`
+        }
+        else if(imc <= 34.9){
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Obesidade grau 1</p>`
+        }
+        else {
+            verIMC.innerHTML = `<p style="color: beige; font-weight: 600;">Obesidade mórbida</p>`
+        }
+        
+    }
+    
+</script>
